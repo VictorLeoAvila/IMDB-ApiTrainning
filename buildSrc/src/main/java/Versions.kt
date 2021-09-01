@@ -37,6 +37,5 @@ object Versions {
 
     const val testExtJunitVersion = "1.1.3"
     const val expressoVersion = "3.4.0"
-    const val koinTestJunitVersion = "3.1.2"
 
 }
