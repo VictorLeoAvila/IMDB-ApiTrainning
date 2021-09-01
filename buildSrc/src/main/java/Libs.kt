@@ -2,7 +2,6 @@ import Versions.androidMaterialVersion
 import Versions.appCompatVersion
 import Versions.constraintLayoutVersion
 import Versions.coreKtxVersion
-import Versions.glideVersion
 import Versions.koinVersion
 import Versions.lifecycleVersion
 import Versions.navigationFragmentVersion
@@ -19,6 +18,10 @@ object Libs {
     const val androidMaterial = "com.google.android.material:material:$androidMaterialVersion"
     const val constraintLayout = "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
 
+    // Glide
+    const val glide = "com.github.bumptech.glide:glide:${Versions.glideVersion}"
+    const val glideCompiler = "com.github.bumptech.glide:compiler:${Versions.glideVersion}"
+
     //retrofit
     const val retrofit = "com.squareup.retrofit2:retrofit:$retrofitVersion"
     const val converterGson = "com.squareup.retrofit2:converter-gson:$retrofitVersion"
@@ -33,11 +36,7 @@ object Libs {
     const val lifeCycleRuntime = "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleVersion"
     //noinspection LifecycleAnnotationProcessorWithJava8
     const val lifecycleCompiler = "androidx.lifecycle:lifecycle-compiler:$lifecycleVersion"
-    const val lifeCycleVersion = "androidx.lifecycle:lifecycle-service:$lifecycleVersion"
-
-    //glide
-    const val glide = "com.github.bumptech.glide:$glideVersion"
-    const val glideCompiler = "com.github.bumptech.glide:compiler:$glideVersion"
+    const val lifeCycleService = "androidx.lifecycle:lifecycle-service:$lifecycleVersion"
 
     //pagin
     const val paging = "androidx.paging:paging-runtime-ktx:$paginVersion"

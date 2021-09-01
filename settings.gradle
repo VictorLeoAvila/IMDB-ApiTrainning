@@ -8,3 +8,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "IMDB AppTrainning"
 include ':app'
+include ':features:home'
+include ':features:login'

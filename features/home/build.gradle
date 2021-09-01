@@ -1,15 +1,13 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-    id 'kotlin-kapt'
-    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
     compileSdk ConfigVersion.compileSdk
 
     defaultConfig {
-        applicationId "com.example.imdbapptrainning"
+        applicationId "com.example.home"
         minSdk ConfigVersion.minSdk
         targetSdk ConfigVersion.targetSdk
         versionCode 1
@@ -31,10 +29,8 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    testOptions {
-        unitTests {
-            includeAndroidResources = true
-        }
+    buildFeatures {
+        viewBinding true
     }
 }
 
@@ -45,8 +41,22 @@ dependencies {
     implementation Libs.androidMaterial
     implementation Libs.constraintLayout
 
+    implementation Libs.retrofit
+    implementation Libs.converterGson
+    implementation Libs.okHttp
+    implementation Libs.logginInterceptor
+    implementation Libs.lifeCycleViewModel
+    implementation Libs.liveData
+    implementation Libs.lifeCycleRuntime
+    implementation Libs.lifecycleCompiler
+    implementation Libs.koinAndroid
+    implementation Libs.koinAndroidCompat
+    implementation Libs.koinWorkmanager
+    implementation Libs.navigationFragment
+    implementation Libs.navigationUi
+
+
     testImplementation TestLibs.jUnit
     androidTestImplementation TestLibs.extJunit
     androidTestImplementation TestLibs.espresso
-    testImplementation TestLibs.koinTest
 }

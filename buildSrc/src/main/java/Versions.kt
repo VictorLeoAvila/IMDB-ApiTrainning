@@ -9,6 +9,9 @@ object Versions {
     const val coreKtxVersion = "1.6.0"
     const val appCompatVersion = "1.3.1"
 
+//  glide
+    const val glideVersion = "4.11.0"
+
     //Retrofit
     const val retrofitVersion = "2.9.0"
 
@@ -17,9 +20,6 @@ object Versions {
 
     //lifeCycle
     const val lifecycleVersion = "2.4.0-alpha03"
-
-    //glide
-    const val glideVersion = "4.12.0"
 
     //pagin
     const val paginVersion = "3.0.0-beta02"
