@@ -45,8 +45,12 @@ dependencies {
     implementation Libs.androidMaterial
     implementation Libs.constraintLayout
 
+    implementation Libs.koinAndroid
+    implementation Libs.koinAndroidCompat
+    implementation Libs.koinWorkmanager
+
     testImplementation TestLibs.jUnit
     androidTestImplementation TestLibs.extJunit
     androidTestImplementation TestLibs.espresso
-    testImplementation TestLibs.koinTest
+    androidTestImplementation TestLibs.koinTest
 }
