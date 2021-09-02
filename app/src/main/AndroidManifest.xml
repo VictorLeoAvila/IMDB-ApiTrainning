@@ -3,6 +3,7 @@
     package="com.example.imdbapptrainning">
 
     <application
+        android:name="androidx.multidex.MultiDexApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -10,10 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IMDBAppTrainning">
         <activity
-            android:name=".login.presentation.LoginActivity"
-            android:exported="true" />
-        <activity
-            android:name=".home.presentation.HomeActivity"
+            android:name=".splash.presentation.HomeActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

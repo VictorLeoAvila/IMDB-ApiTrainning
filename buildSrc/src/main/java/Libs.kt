@@ -4,6 +4,7 @@ import Versions.constraintLayoutVersion
 import Versions.coreKtxVersion
 import Versions.koinVersion
 import Versions.lifecycleVersion
+import Versions.multidexVersion
 import Versions.navigationFragmentVersion
 import Versions.navigationUiVersion
 import Versions.okHttpVersion
@@ -17,6 +18,7 @@ object Libs {
     const val appCompat = "androidx.appcompat:appcompat:$appCompatVersion"
     const val androidMaterial = "com.google.android.material:material:$androidMaterialVersion"
     const val constraintLayout = "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
+    const val multiDex = "androidx.multidex:multidex:$multidexVersion"
 
     // Glide
     const val glide = "com.github.bumptech.glide:glide:${Versions.glideVersion}"

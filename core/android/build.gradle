@@ -1,19 +1,21 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'kotlin-android'
+    id 'kotlin-kapt'
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
     compileSdk ConfigVersion.compileSdk
 
     defaultConfig {
-        applicationId "com.example.home"
         minSdk ConfigVersion.minSdk
         targetSdk ConfigVersion.targetSdk
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -40,10 +42,29 @@ dependencies {
     implementation Libs.appCompat
     implementation Libs.androidMaterial
     implementation Libs.constraintLayout
+    implementation Libs.multiDex
+
+    // Retrofit
+    implementation Libs.retrofit
+    implementation Libs.converterGson
+
+    //okHttp
+    implementation Libs.okHttp
+    implementation Libs.logginInterceptor
+
+    //navigation
+    implementation Libs.navigationFragment
+    implementation Libs.navigationUi
+
+    // koin
+    implementation Libs.koinAndroid
+
+    //glide
+    implementation Libs.glide
+    implementation Libs.glideCompiler
 
     testImplementation TestLibs.jUnit
     androidTestImplementation TestLibs.extJunit
     androidTestImplementation TestLibs.espresso
     androidTestImplementation TestLibs.robolectric
-    androidTestImplementation TestLibs.koinTest
 }

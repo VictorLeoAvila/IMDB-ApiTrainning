@@ -8,6 +8,7 @@ object Versions {
     const val androidMaterialVersion = "1.4.0"
     const val coreKtxVersion = "1.6.0"
     const val appCompatVersion = "1.3.1"
+    const val multidexVersion = "2.0.1"
 
 //  glide
     const val glideVersion = "4.11.0"
@@ -34,8 +35,8 @@ object Versions {
 
     //test
     const val jUnitVersion = "4.13.2"
-
     const val testExtJunitVersion = "1.1.3"
     const val expressoVersion = "3.4.0"
+    const val robolectricVersion = "4.4"
 
 }
